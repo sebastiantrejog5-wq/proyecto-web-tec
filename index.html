@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sebastián Trejo González,">
+    <meta name="description" content="Proyecto final de HTML5 y CSS3 para Ingeniería">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final - Desarrollo Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Proyecto Final: HTML5 y CSS3</h1>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Introducción</h2>
+            <p>Este proyecto integra los conocimientos adquiridos sobre estructuras, multimedia y formularios. 
+               Inspirado en el curso de <a href="https://www.youtube.com/embed/ELSm-G201Ls?origin=https://tu-sitio-web.com" target="_blank">Soy Dalto</a>.</p>
+        </section>
+
+        <section id="tabla-datos">
+            <h2>Registro de Avances</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Módulo</th>
+                        <th>Estado</th>
+                        <th>Prioridad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Estructura HTML5</td>
+                        <td>Completado</td>
+                        <td>Alta</td>
+                    </tr>
+                    <tr>
+                        <td>Multimedia (YT & Audio)</td>
+                        <td>Completado</td>
+                        <td>Media</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="multimedia">
+            <h2>Contenido Multimedia</h2>
+            <div class="media-container">
+                <div class="media-item">
+                    <h3>Imagen de Referencia</h3>
+                    <img src="https://blog.endeos.com/wp-content/uploads/2022/06/lenguajes-de-programacion-web.jpg" alt="Imagen aleatoria de ingeniería">
+                </div>
+
+                <div class="media-item">
+                    <h3>Video Tutorial</h3>
+                    <iframe width="320" height="180" 
+                        src="https://www.youtube.com/embed/ELSm-G201Ls?origin=https://tu-sitio-web.com" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="media-item">
+                    <h3>Recurso de Audio</h3>
+                    <audio controls>
+                        <source src="audio-ejemplo.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section id="frames">
+            <h2>Marcos y Contenedores</h2>
+            <div class="frame-box">
+                <iframe src="https://es.m.wikipedia.org/wiki/HTML5" width="100%" height="300"></iframe>
+            </div>
+        </section>
+
+        <section id="encuesta">
+            <h2>Formulario de Registro</h2>
+            <form action="#">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí">
+
+                <fieldset>
+                    <legend>¿Trabajaste en equipo?</legend>
+                    <input type="radio" id="si" name="equipo" value="si"> <label for="si">Sí</label>
+                    <input type="radio" id="no" name="equipo" value="no"> <label for="no">No</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Habilidades aprendidas:</legend>
+                    <input type="checkbox" id="html" name="skill" value="html"> <label for="html">HTML5</label>
+                    <input type="checkbox" id="css" name="skill" value="css"> <label for="css">CSS3</label>
+                </fieldset>
+
+                <label for="turno">Turno:</label>
+                <select id="turno" name="turno">
+                    <option value="matutino">Matutino</option>
+                    <option value="vespertino">Vespertino</option>
+                </select>
+
+                <button type="submit">Enviar Información</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Integrantes: Sebastián Trejo González 21480727</p>
+    </footer>
+
+</body>
+</html>
